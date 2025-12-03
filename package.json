@@ -1,12 +1,7 @@
 {
-  "name": "myapp",
-  "version": "0.1.0",
-  "description": "Simple app for CI/CD + container scanning demo",
-  "main": "server.js",
+  "name": "trivy-demo",
+  "version": "1.0.0",
   "scripts": {
-    "start": "node server.js",
-    "test": "node -e \"console.log('No tests, passing..')\""
-  },
-  "author": "you",
-  "license": "MIT"
+    "start": "node server.js"
+  }
 }

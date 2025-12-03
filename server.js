@@ -1,18 +1,9 @@
-// server.js
-const http = require('http');
-const port = process.env.PORT || 3000;
+const http = require("http");
 
-const requestHandler = (req, res) => {
-  if (req.url === '/') {
-    res.writeHead(200, { 'Content-Type': 'text/plain' });
-    res.end('Hello from myapp!\n');
-    return;
-  }
-  res.writeHead(404);
-  res.end('Not Found\n');
-};
+const server = http.createServer((req, res) => {
+  res.end("Hello from Trivy CI/CD Pipeline!");
+});
 
-const server = http.createServer(requestHandler);
-server.listen(port, () => {
-  console.log(`Server listening on port ${port}`);
+server.listen(3000, () => {
+  console.log("Server running on port 3000");
 });
