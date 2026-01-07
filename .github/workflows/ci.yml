@@ -25,7 +25,7 @@ jobs:
           endpoint: ${{secrets.ACCUKNOX_ENDPOINT}}
           tenant_id: ${{secrets.ACCUKNOX_TENANT_ID}}
           token: ${{secrets.ACCUKNOX_TOKEN}}
-          label: anmol
+          label: anmoltestaspm
           image: "github-action-test"
           tag: "latest"
 
