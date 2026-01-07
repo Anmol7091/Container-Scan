@@ -22,9 +22,9 @@ jobs:
       - name: "Run Accuknox Container"
         uses: accuknox/container-scan-action@1.0.0
         with:
-          endpoint: $secrets.ACCUKNOX_ENDPOINT
-          tenant_id: $secrets.ACCUKNOX_TENANT_ID
-          token: $secrets.ACCUKNOX_TOKEN
+          endpoint: ${{secrets.ACCUKNOX_ENDPOINT}}
+          tenant_id: ${{secrets.ACCUKNOX_TENANT_ID}}
+          token: ${{secrets.ACCUKNOX_TOKEN}}
           label: anmol
           image: "github-action-test"
           tag: "latest"
